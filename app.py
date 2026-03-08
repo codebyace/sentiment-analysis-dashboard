@@ -6,7 +6,7 @@ from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from wordcloud import WordCloud
 
 #CONFIG
-API_KEY = st.secrets["f033654b1cbf47fa8e4bf367e5b52f21"]
+API_KEY = st.secrets["NEWSAPI_KEY"]
 
 #COLORS
 POSITIVE_COLOR = '#98D8C8'  # mint
