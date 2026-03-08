@@ -1,9 +1,7 @@
-pandas==2.3.3
-requests==2.32.5
-streamlit==1.35.0
-matplotlib==3.10.8
-vaderSentiment==3.3.2
-transformers==4.40.0
-torch==2.10.0
-wordcloud==1.9.6
-altair==4.2.2
+pandas
+requests
+streamlit
+matplotlib
+vaderSentiment
+wordcloud
+pillow
