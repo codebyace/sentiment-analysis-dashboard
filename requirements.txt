@@ -1,0 +1,8 @@
+pandas
+requests
+streamlit
+matplotlib
+vaderSentiment
+transformers
+torch
+wordcloud
