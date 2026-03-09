@@ -1,0 +1,8 @@
+pandas
+requests
+streamlit==1.41.1
+matplotlib
+vaderSentiment
+wordcloud
+pillow
+altair>=5.0.0

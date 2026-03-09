@@ -6,7 +6,7 @@ from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from wordcloud import WordCloud
 
 #CONFIG
-API_KEY = st.secrets["NEWSAPI_KEY"]
+API_KEY = st.secrets["GNEWS_API_KEY"]
 
 #COLORS
 POSITIVE_COLOR = '#98D8C8'  # mint
@@ -15,7 +15,7 @@ NEUTRAL_COLOR = '#C9B8E8'   # lavender
 
 #FUNCTIONS
 def get_headlines(topic):
-    url = f"https://newsapi.org/v2/everything?q={topic}&language=en&sortBy=publishedAt&pageSize=20&apiKey={API_KEY}"
+    url = f"https://gnews.io/api/v4/search?q={topic}&lang=en&max=20&apikey={API_KEY}"
     response = requests.get(url)
     data = response.json()
     articles = data.get('articles', [])
